@@ -1,0 +1,25 @@
+
+/*customization styles start */
+.logo{
+    width: 80px;
+    /* height: 50px; */
+  }
+  .logo-text{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#745328;
+  }
+  .logo{
+    position: relative;
+    margin-top: 1.8rem;
+  }
+  .logo-text span{
+    margin-top: 1rem;
+    padding-right: 0.2rem;
+  }
+ 
+  
+  
+  
