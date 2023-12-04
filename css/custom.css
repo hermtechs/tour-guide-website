@@ -1,8 +1,7 @@
 
 /*customization styles start */
 .logo{
-    width: 80px;
-    /* height: 50px; */
+    width: 100px;
   }
   .logo-text{
     font-size: 1rem;
@@ -13,13 +12,20 @@
   }
   .logo{
     position: relative;
-    margin-top: 1.8rem;
+    margin-top: 2.5rem;
   }
   .logo-text span{
     margin-top: 1rem;
     padding-right: 0.2rem;
+   
   }
- 
   
-  
-  
+ @media(max-width:500px){
+    .logo-text span{
+        margin-left:6rem;
+    }
+    .logo{
+        position: absolute;
+        left: 1rem;
+    }
+ } 
