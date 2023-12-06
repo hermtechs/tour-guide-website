@@ -1,5 +1,8 @@
 
 /*customization styles start */
+html{
+    scroll-behavior: smooth;
+}
 .logo{
     width: 100px;
   }
@@ -22,7 +25,6 @@
   .package-image{
     width: 100%;
     height: 250px;
-    max-height: 280px;
     object-fit: cover;
   }
   .some-spacing{
@@ -35,6 +37,11 @@ justify-content: space-between;
     width: 100%;
     margin-bottom: 1rem;
     text-align: start;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid #d47c3c;
+    outline: none;
 }
 .display-end{
     position: relative;

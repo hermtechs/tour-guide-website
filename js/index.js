@@ -37,7 +37,11 @@ const getEntries = async () => {
                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>${rating}</h6>
                     <h5 class="m-0">${pricing}</h5>
                 </div>
-                <small class="m-0 display-end"><i class="fa fa-user text-primary mr-2"></i>Per Person</small>
+              ${
+                pricing == undefined
+                  ? ""
+                  : `<small class="m-0 display-end"><i class="fa fa-user text-primary mr-2"></i>Per Person</small>`
+              } 
 
             </div>
         </div>
