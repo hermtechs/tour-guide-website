@@ -19,7 +19,29 @@
     padding-right: 0.2rem;
    
   }
+  .package-image{
+    width: 100%;
+    height: 250px;
+    max-height: 280px;
+    object-fit: cover;
+  }
+  .some-spacing{
+display: flex;
+justify-content: space-between;
+  }
   
+.message-box{
+    border: 1px solid #5555;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+.display-end{
+    position: relative;
+    width: 100%;
+    left: 71%;
+    padding-top:0.3rem;
+}
  @media(max-width:500px){
     .logo-text span{
         margin-left:6rem;
