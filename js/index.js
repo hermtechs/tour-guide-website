@@ -4,7 +4,7 @@ const client = contentful.createClient({
   accessToken: "vh2SC4Q2R127xVR1FLbKRciajhIbJ9UhDTsoDVU7Wv4",
 });
 
-const getEntries = async () => {
+const getTourPackages = async () => {
   const tourPackages = await client.getEntries({
     content_type: "tourPackages",
   });
@@ -35,11 +35,11 @@ const getEntries = async () => {
             <div class="border-top mt-4 pt-4">
                 <div class="d-flex justify-content-between">
                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>${rating}</h6>
-                    <h5 class="m-0">${pricing}</h5>
+                    <h5 class="m-0">${pricing == undefined ? " " : pricing}</h5>
                 </div>
               ${
                 pricing == undefined
-                  ? ""
+                  ? " "
                   : `<small class="m-0 display-end"><i class="fa fa-user text-primary mr-2"></i>Per Person</small>`
               } 
 
@@ -54,4 +54,115 @@ const getEntries = async () => {
   const packagesContainer = document.querySelector(".packages-container");
   packagesContainer.innerHTML = tourPackageHTML;
 };
-getEntries();
+getTourPackages();
+
+const getTopDestinations = async () => {
+  const topDestinations = await client.getEntries({
+    content_type: "topDestinations",
+  });
+  //   console.log(topDestinations.items);
+  const topDestinationsItems = topDestinations.items;
+  const topDestinationsHTML = topDestinationsItems
+    .map((item) => {
+      const { destinationName, noOfAttractions, destinationPhoto } =
+        item.fields;
+      const { description, file } = destinationPhoto.fields;
+      const photoUrl = `https://${file.url}`;
+      return `
+    <div class="col-lg-4 col-md-6 mb-4 top-destination">
+    <div class="destination-item position-relative overflow-hidden mb-2">
+        <img class="img-fluid top-destination-photo" src="${photoUrl}" alt="${description}">
+        <a class="destination-overlay text-white text-decoration-none">
+            <h5 class="text-white">${destinationName}</h5>
+            <span>${noOfAttractions}</span>
+        </a>
+    </div>
+  </div>
+    `;
+    })
+    .join("");
+
+  const topDestinationsContainer = document.querySelector(
+    ".top-destinations-container"
+  );
+  topDestinationsContainer.innerHTML = topDestinationsHTML;
+};
+
+getTopDestinations();
+
+const getTestimonials = async () => {
+  const testimonialObject = await client.getEntries({
+    content_type: "testimonials",
+  });
+  const testimonialItems = testimonialObject.items;
+  const testimonialHTML = testimonialItems
+    .map((item) => {
+      const { clientPhoto, clientName, clientProfession, testimonialMessage } =
+        item.fields;
+      console.log(item.fields);
+      console.log(clientPhoto);
+      console.log(clientName);
+      if (file !== undefined) {
+        var { file } = clientPhoto.fields;
+        var photoUrl = `https://${file.url}`;
+      } else {
+        photoUrl = undefined;
+      }
+
+      return `        
+        <div class="owl-item">
+        <div class="card d-flex flex-column">
+          <div class="mt-2">
+            <span class="fas fa-star active-star"></span>
+            <span class="fas fa-star active-star"></span>
+            <span class="fas fa-star active-star"></span>
+            <span class="fas fa-star active-star"></span>
+            <span class="fas fa-star-half-alt active-star"></span>
+          </div>
+          <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
+          <div class="testimonial">${testimonialMessage} </div>
+          <div class="d-flex flex-row profile pt-4 mt-auto">
+            <img src="${photoUrl == undefined ? "../img/user.png" : photoUrl}"
+            alt="" class="rounded-circle">
+
+            <div class="d-flex flex-column pl-2">
+              <div class="name">${clientName}</div>
+              <p class="text-muted designation">${clientProfession}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        `;
+    })
+    .join("");
+  const testimonialContainer = document.querySelector(
+    ".testimonials-container"
+  );
+  testimonialContainer.innerHTML = testimonialHTML;
+};
+
+$(document).ready(function () {
+  var silder = $(".owl-carousel");
+  silder.owlCarousel({
+    autoPlay: false,
+    items: 1,
+    center: false,
+    nav: true,
+    margin: 40,
+    dots: true,
+    loop: true,
+    navText: ["", ""],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      575: { items: 1 },
+      768: { items: 2 },
+      991: { items: 3 },
+      1200: { items: 4 },
+    },
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  getTestimonials();
+});

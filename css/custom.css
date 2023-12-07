@@ -1,3 +1,6 @@
+/* testimonial start */
+/* .container{background-color: rgb(232, 242, 245);padding: 50px 40px 20px;margin-top: 20px;margin-bottom: 20px;overflow: hidden;box-shadow: 5px 5px 25px #a7a7a7}.tag{text-align: center;font-size: 1.1rem}.fa-heart{color: rgba(255, 230, 0, 0.959);font-size: 30px}.card{height: 320px;padding: 10px 20px;border: none;box-shadow: -1px 3px 5px #a7a7a7}.testimonial{font-size: 0.9rem;line-height: 1.4rem;font-weight: 500}.active-star{color: #FBC02D;margin-bottom: 8px}.active-star:hover{color: #F9A825;cursor: pointer}.profile{padding-top: 10px}.name{font-weight: 700}.designation{font-size: 0.84rem;font-weight: 600}.owl-carousel{margin-bottom: 15px}.owl-carousel .owl-stage-outer{padding: 40px 10px;height: 380px}.owl-carousel .owl-item img{width: 45px !important;height: 45px;border-radius: 50%;object-fit: cover}.owl-theme .owl-nav [class*='owl-']{border-radius: 50% !important;background: inherit !important;border: 3px solid #bbb;color: #bbb !important}.owl-theme .owl-nav [class*='owl-']:hover{border: 3px solid #1010ca;color: #1010ca !important}@media(max-width: 575.5px){.container{margin: 0px;padding: 20px}} */
+/* testimonial end */
 
 /*customization styles start */
 html{
@@ -36,8 +39,10 @@ justify-content: space-between;
     border: 1px solid #5555;
     width: 100%;
     margin-bottom: 1rem;
-    text-align: start;
+    text-align: start !important;
+    color: #000;
 }
+
 .form-control:focus{
     box-shadow: none;
     border: 1px solid #d47c3c;
@@ -49,6 +54,29 @@ justify-content: space-between;
     left: 71%;
     padding-top:0.3rem;
 }
+.top-destination{
+    max-width:360px !important;
+}
+.top-destination-photo{
+    max-width: 360px !important;
+
+}
+
+/* testimonial carousel styles */
+.testimonial-card, .card{
+  padding: 1.2rem !important;
+
+}
+.profile img{
+height: 50px !important;
+width: 50px !important;
+object-fit: cover;
+}
+.active-star{
+  color: #d47c3c;
+}
+/* testimonial styles end */
+
  @media(max-width:500px){
     .logo-text span{
         margin-left:6rem;

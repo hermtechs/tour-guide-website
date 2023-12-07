@@ -2373,7 +2373,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #B77729;
   
-  border-color: ;
+  /* border-color: ; */
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -9640,7 +9640,7 @@ h6,
 }
 
 .bg-registration {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover-photo-zebras.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -9789,6 +9789,16 @@ h6,
 .logo-text span{
   margin-top: 1rem;
 }
+/* .owl-nav{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+} */
+
 /*customization styles end*/
 
 
