@@ -38,7 +38,7 @@ const getTourPackages = async () => {
       // console.log(file);
       const photoUrl = `https://${file.url}`;
       return `
-    <div class="col-lg-4 col-md-6 mb-4">
+    <div class="col-lg-4 col-md-6 mb-4 tour-package">
     <div class="package-item bg-white mb-2">
         <img class="img-fluid package-image" src="${photoUrl}" alt="${description}">
         <div class="p-4">
@@ -65,7 +65,6 @@ const getTourPackages = async () => {
     <blockquote>
       <p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</p>
     </blockquote>
-    <cite>Steve Jobs</cite>
   </div>   
 </div>
     `;
