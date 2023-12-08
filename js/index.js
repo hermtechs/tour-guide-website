@@ -33,6 +33,7 @@ const getTourPackages = async () => {
         rating,
         pricing,
         photo,
+        packageInfo,
       } = item.fields;
       const { description, file } = photo.fields;
       // console.log(file);
@@ -46,7 +47,7 @@ const getTourPackages = async () => {
                 <small class="m-0" style="text-align:center"><i class="fa fa-map-marker-alt text-primary mr-2"></i>${destinationName}</small>
                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>${noOfDays}</small>
             </div>
-            <a class="h5 text-decoration-none" href="">${packageDescription}</a>
+            <p class="h5 text-decoration-none">${packageDescription}</p>
             <div class="border-top mt-4 pt-4">
                 <div class="d-flex justify-content-between">
                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>${rating}</h6>
@@ -63,7 +64,7 @@ const getTourPackages = async () => {
     </div>
     <div class='package-description l-quote quote'>
     <div class="description-text">
-      <p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</p>
+      <p>${packageInfo}</p>
     </div>
   </div>   
 </div>
