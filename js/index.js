@@ -62,9 +62,9 @@ const getTourPackages = async () => {
         </div>
     </div>
     <div class='package-description l-quote quote'>
-    <blockquote>
+    <div class="description-text">
       <p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</p>
-    </blockquote>
+    </div>
   </div>   
 </div>
     `;
