@@ -65,7 +65,6 @@ justify-content: space-between;
 /* testimonial carousel styles */
 .testimonial-card, .card{
   padding: 1.2rem !important;
-
 }
 .profile img{
 height: 50px !important;
@@ -76,6 +75,40 @@ object-fit: cover;
   color: #d47c3c;
 }
 /* testimonial styles end */
+
+.about-us-display-imgs {
+  padding: 1rem 0.2rem;
+}
+.about-us-display-imgs img{
+width: 100%;
+height: 100%;
+max-height: 180px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  overflow: scroll;
+  transition: 250ms all ease-in-out;
+  transform: translateY(-100%);
+  background-color: #1B251B !important;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%231B251B' cx='50' cy='0' r='50'/%3E%3Cg fill='%231e271b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23212a1c' cx='50' cy='100' r='50'/%3E%3Cg fill='%23252c1c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23292e1c' cx='50' cy='200' r='50'/%3E%3Cg fill='%232d311c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2331331d' cx='50' cy='300' r='50'/%3E%3Cg fill='%2336351d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b371e' cx='50' cy='400' r='50'/%3E%3Cg fill='%2340381e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23453a1f' cx='50' cy='500' r='50'/%3E%3Cg fill='%234b3c20' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23513d22' cx='50' cy='600' r='50'/%3E%3Cg fill='%23573f24' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%235d4026' cx='50' cy='700' r='50'/%3E%3Cg fill='%23634129' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2369422d' cx='50' cy='800' r='50'/%3E%3Cg fill='%236f4330' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23754435' cx='50' cy='900' r='50'/%3E%3Cg fill='%237a453a' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2380463F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E") !important;
+background-attachment: fixed !important;
+background-size: contain !important;
+} 
+
+.close-overlay{
+  position: relative;
+  left: 90%;
+  color:#fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
  @media(max-width:500px){
     .logo-text span{

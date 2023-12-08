@@ -4,6 +4,21 @@ const client = contentful.createClient({
   accessToken: "vh2SC4Q2R127xVR1FLbKRciajhIbJ9UhDTsoDVU7Wv4",
 });
 
+const closeOverlayBtn = document.querySelector(".close-overlay");
+const contactUsOvelay = document.querySelector(".overlay");
+const bookNowBtns = document.querySelectorAll(".book-btn");
+console.log(bookNowBtns);
+
+bookNowBtns.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    contactUsOvelay.style.transform = "translateY(0%)";
+  })
+);
+
+closeOverlayBtn.addEventListener("click", () => {
+  contactUsOvelay.style.transform = "translateY(100%)";
+});
+
 const getTourPackages = async () => {
   const tourPackages = await client.getEntries({
     content_type: "tourPackages",
@@ -138,7 +153,7 @@ const getTestimonials = async () => {
   const testimonialContainer = document.querySelector(
     ".testimonials-container"
   );
-  testimonialContainer.innerHTML = testimonialHTML;
+  // testimonialContainer.innerHTML = testimonialHTML;
 };
 
 $(document).ready(function () {
@@ -163,6 +178,6 @@ $(document).ready(function () {
     },
   });
 });
-document.addEventListener("DOMContentLoaded", () => {
-  getTestimonials();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   getTestimonials();
+// });

@@ -94,7 +94,7 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -113,7 +113,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
                             <h1 class="display-3 text-white mb-md-4">Let's Discover The World Together</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <a  class="btn btn-primary py-md-3 px-md-5 mt-2 book-btn">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
                             <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <a  class="btn btn-primary py-md-3 px-md-5 mt-2 book-btn">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
                             <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <a  class="btn btn-primary py-md-3 px-md-5 mt-2 book-btn">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -157,6 +157,73 @@
  
     <!-- Booking End -->
 
+    <!-- CONTACT US OVERLAY CONTAINER START-->
+    <div class="overlay">
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+            <div class="close-overlay">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">SUBMIT A FORM</h6>
+                    </div>
+                    <p class="text-white">We will promptly respond via the provided email to kickstart the processing 
+                        of your requests. We are excited about the opportunity 
+                        to host you and ensure a seamless and unforgettable experience. Let's do this! </p>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h4 class="text-white m-0">Book Today !</h4>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form action="https://formspree.io/f/maygrnra"
+                            method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="Name" class="form-control p-4" placeholder="Your name*" required />
+                                </div>
+                                <div class="form-group">
+                                    <input name="Email" type="email" class="form-control p-4" placeholder="Your email*" required />
+                                </div>
+                                <div class="form-group">
+                                    <input name="Destination" type="text" class="form-control p-4" placeholder="Country / State(optional)" />
+                                </div>
+                                <div class="form-group">
+                                    <input name="Destination" type="text" class="form-control p-4" placeholder="Destination (optional)" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Travel Date (optional)" data-target="#date1" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input name="text" type="text" class="form-control p-4" placeholder="Expected stay period (optional)" required />
+                                </div>
+                                <textarea class="form-control py-3 px-4 message-box" rows="5" id="message" placeholder="Message"
+                                required="required"
+                                data-validation-required-message="Please enter your message"></textarea>
+                                <div>
+                                    <button class="btn btn-primary btn-block py-3 btn-submit" type="submit">BOOK NOW</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+    </div>
+
+    <!-- CONTACT US OVERLAY CONTAINER END-->
+
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -164,7 +231,7 @@
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-90" src="img/about-buffalo.jpg" >
+                        <img class="position-absolute w-100 h-95" src="img/about-buffalo.jpg" >
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5" id="about">
@@ -182,21 +249,23 @@ the thrill of adventure, the tranquility of a beach retreat, or the discovery of
 Wilderness and Wonders is your gateway to a world of possibilities. Join us in exploring the
 wonders of Uganda, one remarkable journey
                         </p>
-                        <div class="row mb-4">
+                        <div class="row mb-4 about-us-display-imgs">
                             <div class="col-6">
-                                <img class="img-fluid" src="img/about-1.jpg" alt="">
+                                <img class="img-fluid" src="img/about-us1-display.jpg" alt="">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="img/about-2.jpg" alt="">
+                                <img class="img-fluid" src="img/hero2-buffallo-crossing.jpg" alt="">
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary mt-1">Book Now</a>
+                        <a class="btn btn-primary mt-1 book-btn">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
+
+
 
 
     <!-- Feature Start -->
@@ -331,10 +400,10 @@ wonders of Uganda, one remarkable journey
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" id="contact">
                     <div class="card border-0">
                         <div class="card-header bg-primary text-center p-4">
-                            <h1 class="text-white m-0">Contact Us</h1>
+                            <h4 class="text-white m-0">Book Today !</h4>
                         </div>
                         <div class="card-body rounded-bottom bg-white p-5">
                             <form action="https://formspree.io/f/maygrnra"
@@ -357,7 +426,7 @@ wonders of Uganda, one remarkable journey
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input name="text" type="email" class="form-control p-4" placeholder="Expected stay period (optional)" required />
+                                    <input name="text" type="text" class="form-control p-4" placeholder="Expected stay period (optional)" required />
                                 </div>
                                 <textarea class="form-control py-3 px-4 message-box" rows="5" id="message" placeholder="Message"
                                 required="required"
@@ -540,7 +609,7 @@ wonders of Uganda, one remarkable journey
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Book Today</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
                 <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
@@ -563,7 +632,8 @@ wonders of Uganda, one remarkable journey
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white-50">Designed <a href="https://htmlcodex.com">HTML Codex</a> and
+                    <a href="https://hermtecs.com"></a>
                 </p>
             </div>
         </div>
