@@ -7,7 +7,7 @@ const client = contentful.createClient({
 const closeOverlayBtn = document.querySelector(".close-overlay");
 const contactUsOvelay = document.querySelector(".overlay");
 const bookNowBtns = document.querySelectorAll(".book-btn");
-console.log(bookNowBtns);
+// console.log(bookNowBtns);
 
 bookNowBtns.forEach((btn) =>
   btn.addEventListener("click", () => {
@@ -61,6 +61,12 @@ const getTourPackages = async () => {
             </div>
         </div>
     </div>
+    <div class='package-description l-quote quote'>
+    <blockquote>
+      <p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</p>
+    </blockquote>
+    <cite>Steve Jobs</cite>
+  </div>   
 </div>
     `;
     })
@@ -93,6 +99,7 @@ const getTopDestinations = async () => {
         </a>
     </div>
   </div>
+  
     `;
     })
     .join("");
