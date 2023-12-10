@@ -156,6 +156,9 @@ p {
 .tour-package:hover .package-description{
   transform: scale(1);
 }
+.form-group input::placeholder{
+  font-size: 0.9rem;
+}
 /* .top-destination{
   width: 300px !important;
   height: 300px !important;
