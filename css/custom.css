@@ -170,4 +170,7 @@ p {
         position: absolute;
         left: 1rem;
     }
+    .navbar{
+      flex-wrap: nowrap;
+    }
  } 
