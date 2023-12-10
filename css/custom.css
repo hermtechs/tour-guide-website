@@ -55,10 +55,11 @@ justify-content: space-between;
     padding-top:0.3rem;
 }
 .top-destination{
-    max-width:360px !important;
+    width:360px !important;
 }
 .top-destination-photo{
-    max-width: 360px !important;
+    width: 360px !important;
+    height: 250px !important;
 
 }
 
@@ -154,6 +155,10 @@ p {
 .tour-package:hover .package-description{
   transform: scale(1);
 }
+/* .top-destination{
+  width: 300px !important;
+  height: 300px !important;
+} */
 /* .description-text {
   font: italic 26px / 1.3 'Lora', serif;
 } */
