@@ -164,11 +164,11 @@ p {
 
  @media(max-width:500px){
     .logo-text span{
-        margin-left:3.8rem;
+        margin-left:3.9rem;
     }
     .logo{
         position: absolute;
-        left: -0.3rem;
+        left: -0.4rem;
     }
     .navbar{
       flex-wrap: nowrap;
