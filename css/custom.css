@@ -165,6 +165,7 @@ p {
  @media(max-width:500px){
     .logo-text span{
         margin-left:5rem;
+        display: none;
     }
     .logo{
         position: absolute;
