@@ -6,6 +6,7 @@
 /* html{
     scroll-behavior: smooth;
 } */
+
 .logo{
     width: 100px;
   }
@@ -175,5 +176,8 @@ p {
     .logo{
         position: absolute;
         left: 1rem;
+    }
+    .form-group{
+      width: 100%;
     }
  } 
