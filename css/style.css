@@ -9789,7 +9789,11 @@ h6,
 .logo-text span{
   margin-top: 1rem;
 }
-
+.navbar-toggler{
+  all: unset;
+  border: 1px solid #000;
+  padding: 0.2rem;
+}
 /* .owl-nav{
   position: absolute;
   display: flex;
