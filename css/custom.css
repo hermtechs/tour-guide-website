@@ -159,6 +159,9 @@ p {
 .form-group input::placeholder{
   font-size: 0.9rem;
 }
+.top-bar{
+  display: flex;
+}
 /* .top-destination{
   width: 300px !important;
   height: 300px !important;
@@ -182,5 +185,11 @@ p {
     }
     .form-group input{
       width: 100%;
+    }
+    .top-bar{
+      justify-content: center;
+    }
+    .top-bar a{
+      font-size: 0.9rem;
     }
  } 
