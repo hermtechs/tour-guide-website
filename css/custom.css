@@ -8,65 +8,65 @@
 } */
 
 .logo{
-    width: 100px;
-  }
-  .logo-text{
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#745328;
-  }
-  .logo{
-    position: relative;
-    margin-top: 2.5rem;
-  }
-  .logo-text span{
-    margin-top: 1rem;
-    padding-right: 0.2rem;
-   
-  }
-  .package-image{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  .some-spacing{
+  width: 100px;
+}
+.logo-text{
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#745328;
+}
+.logo{
+  position: relative;
+  margin-top: 2.5rem;
+}
+.logo-text span{
+  margin-top: 1rem;
+  padding-right: 0.2rem;
+ 
+}
+.package-image{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.some-spacing{
 display: flex;
 justify-content: space-between;
-  }
-  
+}
+
 .message-box{
-    border: 1px solid #5555;
-    width: 100%;
-    margin-bottom: 1rem;
-    text-align: start !important;
-    color: #000;
+  border: 1px solid #5555;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: start !important;
+  color: #000;
 }
 
 .form-control:focus{
-    box-shadow: none;
-    border: 1px solid #d47c3c;
-    outline: none;
+  box-shadow: none;
+  border: 1px solid #d47c3c;
+  outline: none;
 }
 .display-end{
-    position: relative;
-    width: 100%;
-    left: 71%;
-    padding-top:0.3rem;
+  position: relative;
+  width: 100%;
+  left: 71%;
+  padding-top:0.3rem;
 }
 .top-destination{
-    width:360px !important;
+  width:360px !important;
 }
 .top-destination-photo{
-    width: 360px !important;
-    height: 250px !important;
+  width: 360px !important;
+  height: 250px !important;
 
 }
 
 /* testimonial carousel styles */
 .testimonial-card, .card{
-  padding: 1.2rem !important;
+padding: 1.2rem !important;
 }
 .profile img{
 height: 50px !important;
@@ -74,12 +74,12 @@ width: 50px !important;
 object-fit: cover;
 }
 .active-star{
-  color: #d47c3c;
+color: #d47c3c;
 }
 /* testimonial styles end */
 
 .about-us-display-imgs {
-  padding: 1rem 0.2rem;
+padding: 1rem 0.2rem;
 }
 .about-us-display-imgs img{
 width: 100%;
@@ -87,115 +87,115 @@ height: 100%;
 max-height: 180px;
 }
 .overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: #fff;
-  z-index: 1000;
-  overflow: scroll;
-  transition: 250ms all ease-in-out;
-  transform: translateY(-100%);
-  background-color: #1B251B !important;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 100%;
+background: #fff;
+z-index: 1000;
+overflow: scroll;
+transition: 250ms all ease-in-out;
+transform: translateY(-100%);
+background-color: #1B251B !important;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%231B251B' cx='50' cy='0' r='50'/%3E%3Cg fill='%231e271b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23212a1c' cx='50' cy='100' r='50'/%3E%3Cg fill='%23252c1c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23292e1c' cx='50' cy='200' r='50'/%3E%3Cg fill='%232d311c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2331331d' cx='50' cy='300' r='50'/%3E%3Cg fill='%2336351d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b371e' cx='50' cy='400' r='50'/%3E%3Cg fill='%2340381e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23453a1f' cx='50' cy='500' r='50'/%3E%3Cg fill='%234b3c20' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23513d22' cx='50' cy='600' r='50'/%3E%3Cg fill='%23573f24' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%235d4026' cx='50' cy='700' r='50'/%3E%3Cg fill='%23634129' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2369422d' cx='50' cy='800' r='50'/%3E%3Cg fill='%236f4330' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23754435' cx='50' cy='900' r='50'/%3E%3Cg fill='%237a453a' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2380463F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E") !important;
 background-attachment: fixed !important;
 background-size: contain !important;
 } 
 
 .close-overlay{
-  position: relative;
-  left: 90%;
-  color:#fff;
-  font-size: 1.2rem;
-  cursor: pointer;
+position: relative;
+left: 90%;
+color:#fff;
+font-size: 1.2rem;
+cursor: pointer;
 }
 
 
 /* description/message buble start */
 .description-text,
 p {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 .tour-package{
-  position: relative;
+position: relative;
 }
 .package-description {
-  position: absolute;
-  width: 300px;
-  padding: 15px 25px 20px;
-  margin: 20px auto;
-  color: #fff;
-  z-index: 200;
-  background: rgba(121, 83, 7,0.94);
-  border-radius: 1.9rem;
-  top: -4rem;
-  font: 1rem / 1.2 Arial, sans-serif;
-  left: 1.5rem;
-  transition: 300ms ease-in;
-  transform: scale(0);
-  transform-origin: bottom;
+position: absolute;
+width: 300px;
+padding: 15px 25px 20px;
+margin: 20px auto;
+color: #fff;
+z-index: 200;
+background: rgba(121, 83, 7,0.94);
+border-radius: 1.9rem;
+top: -4rem;
+font: 1rem / 1.2 Arial, sans-serif;
+left: 1.5rem;
+transition: 300ms ease-in;
+transform: scale(0);
+transform-origin: bottom;
 }
 
 .quote:after {
-  -moz-transform: skewX(-15deg);
-  -ms-transform: skewX(-15deg);
-  -webkit-transform: skewX(-15deg);
-  transform: skewX(-15deg);
-  content: "";
-  position: absolute;
-  top: 99%;
-  right: 25px;
-  border-width: 30px 30px 0 0;
-  border-style: solid;
-  border-color: #795307 transparent;
-  opacity: 0.94;
+-moz-transform: skewX(-15deg);
+-ms-transform: skewX(-15deg);
+-webkit-transform: skewX(-15deg);
+transform: skewX(-15deg);
+content: "";
+position: absolute;
+top: 99%;
+right: 25px;
+border-width: 30px 30px 0 0;
+border-style: solid;
+border-color: #795307 transparent;
+opacity: 0.94;
 }
 .tour-package:hover .package-description{
-  transform: scale(1);
+transform: scale(1);
 }
 .form-group input::placeholder{
-  font-size: 0.9rem;
+font-size: 0.9rem;
 }
 .top-bar{
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center;
-  width: 100%;
-  /* margin: 0 2rem; */
-  gap: 0.4rem;
+display: flex !important;
+justify-content: space-between !important;
+align-items: center;
+width: 100%;
+/* margin: 0 2rem; */
+gap: 0.4rem;
 }
 /* .top-destination{
-  width: 300px !important;
-  height: 300px !important;
+width: 300px !important;
+height: 300px !important;
 } */
 /* .description-text {
-  font: italic 26px / 1.3 'Lora', serif;
+font: italic 26px / 1.3 'Lora', serif;
 } */
 
 /* whatsapp floating btn start */
 .float-whatsapp-btn{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+position:fixed;
+width:60px;
+height:60px;
+bottom:110px;
+right:40px;
+background:#25d366;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:30px;
+box-shadow: 2px 2px 3px #999;
+z-index:100;
 }
 
 .my-float{
-	margin-top:16px;
-  color: #fff;
-  position: relative;
-  z-index: 1000;
+margin-top:16px;
+color: #fff;
+position: relative;
+/* z-index: 1000; */
 }
 /* whatsapp floating button */
 
@@ -203,30 +203,30 @@ p {
 /* description/message buble start */
 
 
- @media(max-width:500px){
-    .logo-text span{
-        margin-left:5rem;
-        display: none;
-    }
-    .logo{
-        position: absolute;
-        left: 1rem;
-    }
-    .form-group input{
-      width: 100%;
-    }
-    .top-bar{
-      justify-content: center;
-    }
-    .top-bar a{
-      font-size: 0.85rem;
-    }
- } 
- @media (max-width:400px){
+@media(max-width:500px){
+  .logo-text span{
+      margin-left:5rem;
+      display: none;
+  }
+  .logo{
+      position: absolute;
+      left: 1rem;
+  }
+  .form-group input{
+    width: 100%;
+  }
   .top-bar{
-    margin: 0 3rem;
+    justify-content: center;
   }
-  .email-link-text{
-    display: none;
+  .top-bar a{
+    font-size: 0.85rem;
   }
- }
+} 
+@media (max-width:400px){
+.top-bar{
+  margin: 0 3rem;
+}
+.email-link-text{
+  display: none;
+}
+}
