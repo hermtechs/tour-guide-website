@@ -199,6 +199,9 @@ p {
     }
  } 
  @media (max-width:400px){
+  .top-bar{
+    margin: 0 3rem;
+  }
   .email-link-text{
     display: none;
   }
